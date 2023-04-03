@@ -3,7 +3,7 @@ import { useState } from 'react'
 function App() {
   return (
     <>
-      <h1 class="text-3xl font-bold underline">
+      <h1 class="text-3xl font-bold underline bg-primary">
         Robber Ducky Labs!
       </h1>
     </>
