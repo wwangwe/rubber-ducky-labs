@@ -15,6 +15,9 @@ export const Footer = () => {
                 </div>
                 <div className="flex justify-center p-2 md:p-4">
                     <Slide direction={'up'} cascade delay={500} duration={250}>
+                        <a href="mailto:hello@rubberduckylabs.io?subject=Hello!" className="mx-4">
+                            <i className="fa-solid fa-envelope fa-lg"></i>
+                        </a>
                         <a href="https://twitter.com/RubberDuckyLabs" className="mx-4">
                             <i className="fa-brands fa-twitter fa-lg"></i>
                         </a>
@@ -29,7 +32,7 @@ export const Footer = () => {
                 <div className="p-2 md:p-4 md:text-right text-center">
                     <small>
                         <Fade cascade delay={500} duration={50}>
-                            Copyright © 2023 - Robber Ducky Labs
+                            Copyright &copy; 2023 - Robber Ducky Labs
                         </Fade>
                     </small>
                 </div>
