@@ -7,6 +7,11 @@ export default {
         primary: "#ffc700",
         secondary: "#383838",
         accent: "#9c801c",
+        extra: "#b08d23"
+      },
+      fontFamily: {
+        century: ["Century Gothic", "sans-serif"],
+        centuryBold: ["Century Gothic Bold", "sans-serif"]
       },
     },
   },
