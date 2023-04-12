@@ -14,7 +14,7 @@
   font-family: "Century Gothic Bold";
   src: url(assets/fonts/CenturyGothicBold.TTF);
   font-weight: normal;
-  font-style:normal;
+  font-style: normal;
 }
 
 * {
@@ -59,7 +59,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+input,
+textarea {
   @apply text-gray-800;
 }
 
