@@ -5,11 +5,11 @@ import { Fade } from 'react-awesome-reveal'
 
 export const Navbar = () => {
   return (
-    <nav className='sticky top-0 z-50 bg-secondary bg-opacity-20 backdrop-blur-md'>
+    <nav className='sticky top-0 z-50 bg-secondary bg-opacity-50 backdrop-blur-md'>
       <div className="container mx-auto flex justify-between items-center py-4">
         <a href="/" className='flex items-end space-x-2 hover:opacity-80'>
-          {/* <img src={RDLLL} className="h-8" draggable={false} alt="Logo" /> */}
-          <img src={RDLPL} className="h-12" draggable={false} alt="Logo" />
+          <img src={RDLLL} className="h-8" draggable={false} alt="Logo" />
+          {/* <img src={RDLPL} className="h-12" draggable={false} alt="Logo" /> */}
           {/* <span className='text-2xl text-white font-medium'>Rubber Ducky Labs</span> */}
         </a>
         <div className="hidden md:flex justify-end space-x-8">

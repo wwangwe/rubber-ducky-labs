@@ -4,7 +4,7 @@ import { Zoom } from 'react-awesome-reveal'
 
 export const Footer = () => {
     return (
-        <footer className="z-50 bg-secondary bg-opacity-20 backdrop-blur text-white uppercase">
+        <footer className="z-50 bg-secondary bg-opacity-70 backdrop-blur text-white uppercase">
             <div className="grid md:grid-cols-3 grid-cols-1 md:gap-20 p-6">
                 <div className="md:text-left text-center">
                     <Zoom cascade triggerOnce delay={500} duration={500}>
