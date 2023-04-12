@@ -21,7 +21,7 @@ export const Landing = () => {
 
             <Break text={"Why Choose Us?"} image={doors} top />
 
-            <div className="container mx-auto py-20">
+            <div className="container px-4 mx-auto py-2 md:py-20">
                 <Fade triggerOnce cascade damping={0.5} direction="up">
                     <h4 className="text-center text-gray-400 pb-12">Check this out</h4>
                     <p>
@@ -38,7 +38,7 @@ export const Landing = () => {
 
             <Break text={"Our Approach"} image={gloves} />
 
-            <div className="container mx-auto py-20">
+            <div className="container px-4 mx-auto py-2 md:py-20">
                 <h4 className="text-center text-gray-400 pb-10">We can help you</h4>
                 <div className="grid md:grid-cols-3 grid-cols-1 gap-8">
                     <Fade triggerOnce cascade damping={0.5} direction="up" duration={500}>
@@ -55,13 +55,13 @@ export const Landing = () => {
 
             <Break text={"What Makes Us Different?"} image={legs} />
 
-            <div className="container mx-auto py-20">
+            <div className="container px-4 mx-auto py-2 md:py-20">
                 <h4 className="text-center text-gray-400 pb-10">What Makes Us Different?</h4>
                 <div className="flex flex-wrap justify-between">
-                    <p className='w-1/2 pr-8 text-justify'>
+                    <p className='w-full md:w-1/2 pr-0 md:pr-8 text-justify'>
                         With Rubber Ducky Labs, you can easily figure out what's going on with your recommender system. You'll get answers in minutes, rather than waiting a week for the data science team to run some analysis.
                     </p>
-                    <p className='w-1/2 pl-8 text-justify'>
+                    <p className='w-full md:w-1/2 pl-0 md:pl-8 text-justify'>
                         Our suite of tools allows you to explore your data visually, analyze individual user journeys, consolidate and debug your business logic, identify trends, segment and filter your data, and compare models and ranking changes side-by-side.
                     </p>
                     <div className="w-full bg-white p-4 my-8 rounded-3xl border">
@@ -74,11 +74,13 @@ export const Landing = () => {
             </div>
 
             <Break image={duckOnDock} bottom>
-                <div className="relative flex flex-col justify-center items-center space-y-8 md:space-y-10 px-60 text-center">
-                    <h3 className="text-white uppercase leading-[1.5]">Maximize your sales with Rubber Ducky's <br /> advanced tools for e-commerce</h3>
-                    <Solid>
-                        Get Started <i className="fa-solid fa-arrow-right ml-2"></i>
-                    </Solid>
+                <div className="relative flex flex-col justify-center items-center space-y-8 md:space-y-10 px-0 md:px-60 text-center">
+                    <Fade triggerOnce cascade damping={0.5} direction="up">
+                        <h3 className="text-white uppercase leading-[1.5] text-base md:text-3xl">Maximize your sales with Rubber Ducky's <br /> advanced tools for e-commerce</h3>
+                        <Solid>
+                            Get Started <i className="fa-solid fa-arrow-right ml-2"></i>
+                        </Solid>
+                    </Fade>
                 </div>
             </Break>
         </div>
