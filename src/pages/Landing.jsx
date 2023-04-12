@@ -30,9 +30,9 @@ export const Landing = () => {
                     <p>
                         That's where Rubber Ducky Labs comes in - we make sure your app's product recommendations are always on point.
                     </p>
-                    <div className="w-full bg-gray-50 p-1 my-8 rounded-3xl border">
+                    {/* <div className="w-full bg-gray-50 p-1 my-8 rounded-3xl border">
                         <img src={demo1} draggable={false} className="rounded-lg" />
-                    </div>
+                    </div> */}
                 </Fade>
             </div>
 
