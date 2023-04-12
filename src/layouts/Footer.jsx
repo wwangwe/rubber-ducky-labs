@@ -1,42 +1,42 @@
 import React from 'react'
 
-import { Fade, Slide } from 'react-awesome-reveal'
+import { Zoom } from 'react-awesome-reveal'
 
 export const Footer = () => {
     return (
-        <>
-            <footer className="grid md:grid-cols-3 grid-cols-1 md:gap-20 px-2 border-t bg-secondary text-white">
-                <div className="p-2 md:p-4 md:text-left text-center">
-                    <small>
-                        <Fade cascade delay={500} duration={50}>
+        <footer className="z-50 bg-secondary bg-opacity-20 backdrop-blur text-white uppercase">
+            <div className="grid md:grid-cols-3 grid-cols-1 md:gap-20 p-6">
+                <div className="md:text-left text-center">
+                    <Zoom cascade triggerOnce delay={500} duration={500}>
+                        <small className='tracking-[4px] text-[11px]'>
                             Built in San Francisco, CA
-                        </Fade>
-                    </small>
+                        </small>
+                    </Zoom>
                 </div>
-                <div className="flex justify-center p-2 md:p-4">
-                    <Slide direction={'up'} cascade delay={500} duration={250}>
-                        <a href="mailto:hello@rubberduckylabs.io?subject=Hello!" className="mx-4">
+                <div className="flex justify-center ">
+                    <Zoom cascade triggerOnce delay={500} duration={500}>
+                        <a href="mailto:hello@rubberduckylabs.io?subject=Hello!" className="mx-4 hover:text-primary">
                             <i className="fa-solid fa-envelope fa-lg"></i>
                         </a>
-                        <a href="https://twitter.com/RubberDuckyLabs" className="mx-4">
+                        <a href="https://twitter.com/RubberDuckyLabs" className="mx-4 hover:text-primary">
                             <i className="fa-brands fa-twitter fa-lg"></i>
                         </a>
-                        <a href="https://www.linkedin.com/company/rubber-ducky-labs/" className="mx-4">
+                        <a href="https://www.linkedin.com/company/rubber-ducky-labs/" className="mx-4 hover:text-primary">
                             <i className="fa-brands fa-linkedin fa-lg"></i>
                         </a>
-                        <a href="https://www.ycombinator.com/companies/rubber-ducky-labs" className="mx-4">
+                        <a href="https://www.ycombinator.com/companies/rubber-ducky-labs" className="mx-4 hover:text-primary">
                             <i className="fa-brands fa-y-combinator fa-lg"></i>
                         </a>
-                    </Slide>
+                    </Zoom>
                 </div>
-                <div className="p-2 md:p-4 md:text-right text-center">
-                    <small>
-                        <Fade cascade delay={500} duration={50}>
-                            Copyright &copy; 2023 - Robber Ducky Labs
-                        </Fade>
-                    </small>
+                <div className="md:text-right text-center">
+                    <Zoom cascade triggerOnce delay={500} duration={500}>
+                        <small className='tracking-[4px] text-[11px]'>
+                            Copyright &copy; 2023 - Rubber Ducky Labs, Inc.
+                        </small>
+                    </Zoom>
                 </div>
-            </footer>
-        </>
+            </div>
+        </footer>
     )
 }
