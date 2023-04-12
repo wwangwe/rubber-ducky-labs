@@ -1,46 +1,59 @@
-import React from 'react'
+import React from "react"
 
-import { Header } from '../components'
-import { alexandria, georgia, hands } from '../assets'
+import { Header } from "../components"
+import { alexandria, georgia, hands } from "../assets"
 
 export const Team = () => {
   return (
     <>
       <Header title="Meet the 'A' Team" image={hands} />
-      <section className='py-32'>
+      <section className="py-20">
         <div className="grid md:grid-cols-2 grid-cols-1 md:gap-8 container mx-auto">
-          <div className="flex border rounded-3xl  py-4 px-6">
+          <div className="flex flex-wrap border border-gray-300 p-6">
 
-            <div className="w-2/3">
-              <h4 className='pb-4'>Alexandra Johnson</h4>
-              <p>
-                Alexandra has a degree in computer science from Carnegie Mellon University. She started her career working on recommender systems in fashion tech at Polyvore (acquired by Yahoo in 2015), before joining an early pioneer in the ML tools space, SigOpt (acquired by Intel in 2020), where she led the Platform Team. She holds two patents in ML tooling.
-              </p>
+            <div className="w-full flex flex-wrap justify-center items-center border-b border-dashed border-gray-300">
+              <div className="w-3/12">
+                <img src={alexandria} alt="Alexandria" className="w-40" />
+              </div>
+              <div className="w-9/12">
+                <div className="flex flex-wrap text-center">
+                  <h4 className="w-full">Alexandra Johnson</h4>
+                  <div className="w-full">
+                    <div className="flex flex-wrap justify-center items-center">
+                      <h5>CEO</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div className="w-1/3 flex flex-wrap justify-center">
-              <h4 className='w-full text-center font-bold'>CEO</h4>
-              <img src={alexandria} draggable={false} alt="Alexandria" className='w-40 h-40 rounded-full shadow-lg' />
-              <div className="w-full flex justify-center">
-                <a href="#" className="mx-2"><i className="fa-brands fa-twitter fa-lg"></i></a>
-                <a href="#" className="mx-2"><i className="fa-brands fa-linkedin fa-lg"></i></a>
-              </div>
+            <div className="w-full mt-4">
+              <p className="text-justify">
+                Alexandra is a seasoned veteran in the ML tooling industry with over eight years of experience. She started her journey as the first software engineer at @SigOpt and has been dedicated to making machine learning effortless and user-friendly ever since. Alexandra"s background includes working on recommender systems in the fashion tech industry, which inspired her to create Rubber Ducky Labs as a suite of dream tools she wished she had during her own experiences.              </p>
             </div>
           </div>
-          <div className="flex border rounded-3xl py-4 px-6">
-            <div className="w-1/3 flex flex-wrap justify-center gap-4">
-              <h4 className='w-full text-center font-bold'>CTO</h4>
-              <img src={georgia} draggable={false} alt="Alexandria" className='w-40 h-40 rounded-full shadow-lg' />
-              <div className="w-full flex justify-center">
-                <a href="#" className="mx-2"><i className="fa-brands fa-twitter fa-lg"></i></a>
-                <a href="#" className="mx-2"><i className="fa-brands fa-linkedin fa-lg"></i></a>
+
+          <div className="flex flex-wrap border border-gray-300 p-6">
+
+            <div className="w-full flex flex-wrap justify-center items-center border-b border-dashed border-gray-300">
+              <div className="w-3/12">
+                <img src={georgia} alt="Georgia" className="w-40" />
+              </div>
+              <div className="w-9/12">
+                <div className="flex flex-wrap text-center">
+                  <h4 className="w-full">Georgia Hong</h4>
+                  <div className="w-full">
+                    <div className="flex flex-wrap justify-center items-center">
+                      <h5>CTO</h5>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="w-2/3 text-right">
-              <h4 className='pb-4'>Georgia Hong</h4>
-              <p>
-                Georgia got her degree in software engineering from the University of Waterloo, during which time she completed six co-ops including Datadog, Cockroach Labs, and SigOpt. After graduation she worked on security and high-scale infrastructure at Meta.
-              </p>
+
+            <div className="w-full mt-4">
+              <p className="text-justify">
+                Georgia is a highly skilled software engineer with a degree from the University of Waterloo. During her time in school, she completed six internships at prestigious companies such as Datadog, Cockroach Labs, Instagram, and SigOpt. After graduating, Georgia worked on Security and ML Infra at Meta, honing her expertise in these areas. With her wealth of experience, Georgia brings invaluable technical leadership to the team at Rubber Ducky Labs.              </p>
             </div>
           </div>
         </div>
