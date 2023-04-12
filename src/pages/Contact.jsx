@@ -38,7 +38,7 @@ export const Contact = () => {
                     </div>
                     <div className="w-1/2">
                         <Fade triggerOnce cascade damping={0.5} direction="up">
-                            <h3 className="pb-4">Say Something</h3>
+                            <h3 className="pb-6">Duck Quack and Reach Out!</h3>
                         </Fade>
                         <form className='uppercase'>
                             <Fade triggerOnce cascade damping={0.5} direction="up">
@@ -66,9 +66,11 @@ export const Contact = () => {
                                     <input type="email" name="message" id="message" className="block py-2.5 w-full text-sm uppercase bg-transparent border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-accent peer" placeholder=" " required />
                                     <label htmlFor="message" rows="4" className="block peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-accent peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Message</label>
                                 </div>
-                                <Solid alt={true}>
-                                    Submit
-                                </Solid>
+                                <div className="text-center">
+                                    <Solid alt={true}>
+                                        Submit
+                                    </Solid>
+                                </div>
                             </Fade>
                         </form>
 
