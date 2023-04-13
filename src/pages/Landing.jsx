@@ -1,9 +1,11 @@
 import React from 'react'
 
-import { Header } from '../layouts'
-import { demo1, demo2, gloves, legs, doors, duckOnDock } from '../assets'
-import { Solid, SolutionCard, Break } from '../components'
 import { Fade } from 'react-awesome-reveal'
+import { Link } from 'react-router-dom'
+
+import { Header } from '../layouts'
+import { Solid, SolutionCard, Break } from '../components'
+import { demo1, demo2, gloves, legs, doors, duckOnDock } from '../assets'
 
 
 export const Landing = () => {
@@ -74,15 +76,17 @@ export const Landing = () => {
             </div>
 
             <Break image={duckOnDock} bottom>
-                <div className="relative flex flex-col justify-center items-center space-y-8 md:space-y-10 px-0 md:px-60 text-center">
+                <div className="relative flex flex-col justify-center items-center space-y-8 md:space-y-10 px-0 md:px-50 text-center">
                     <Fade triggerOnce cascade damping={0.5} direction="up">
                         <h3 className="text-white uppercase leading-[1.5] text-base md:text-3xl">Maximize your sales with Rubber Ducky's <br /> advanced tools for e-commerce</h3>
                         <Solid>
-                            Get Started <i className="fa-solid fa-arrow-right ml-2"></i>
+                            <Link to="/contact/">
+                                Get Started <i className="fa-solid fa-arrow-right ml-2"></i>
+                            </Link>
                         </Solid>
                     </Fade>
                 </div>
-            </Break>
-        </div>
+            </Break >
+        </div >
     )
 }
