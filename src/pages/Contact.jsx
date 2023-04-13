@@ -38,7 +38,7 @@ export const Contact = () => {
                     </div>
                     <div className="w-full md:w-1/2">
                         <Fade triggerOnce cascade damping={0.5} direction="up">
-                            <h3 className="pb-4 md:pb-6">Duck Quack and Reach Out!</h3>
+                            <h3 className="pb-4 md:pb-6">Quack Us Up! </h3>
                         </Fade>
                         <form className='uppercase'>
                             <Fade triggerOnce cascade damping={0.5} direction="up">
