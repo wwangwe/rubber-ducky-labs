@@ -42,7 +42,7 @@ h5 {
 }
 
 p {
-  @apply font-normal leading-relaxed tracking-widest text-base pb-1 text-gray-800;
+  @apply font-normal leading-relaxed tracking-widest text-sm pb-1;
 }
 
 span {
@@ -60,11 +60,12 @@ h3,
 h4,
 h5,
 h6,
+p,
 input,
 textarea {
   @apply text-gray-800;
 }
 
 p {
-  @apply pb-4;
+  @apply pb-4 text-justify;
 }

@@ -2,6 +2,7 @@ import React from 'react'
 
 import { Fade } from 'react-awesome-reveal'
 
+import { Skeleton } from '../layouts/Skeleton'
 import { Header } from '../components'
 import { duck } from "../assets"
 
@@ -9,13 +10,13 @@ export const Company = () => {
     return (
         <>
             <Header title="Who We Are" image={duck}>
-                <h5 className="text-white hidden md:block">
+                <h5 className="text-white hidden sm:block">
                     Welcome to Rubber Ducky Labs - the ultimate solution to avoid tone-deaf product recommendations in the e-commerce industry.
                 </h5>
             </Header>
-            <section className="container px-4 mx-auto py-2 md:py-20">
-                <div className="py-0 md:py-8">
-                    <div className="py-4 md:py-12">
+            <section className="py-2 md:py-20">
+                <Skeleton>
+                    <div className="py-0">
                         <Fade triggerOnce cascade damping={0.5} direction="up">
                             <h3 className="text-center py-4">Our Story</h3>
                             <p className="text-justify">
@@ -23,7 +24,7 @@ export const Company = () => {
                             </p>
                         </Fade>
                     </div>
-                    <div className="py-4 md:py-12">
+                    <div className="py-0">
                         <Fade triggerOnce cascade damping={0.5} direction="up">
                             <h3 className="text-center py-4">The Vision</h3>
                             <p className="text-justify">
@@ -31,7 +32,7 @@ export const Company = () => {
                             </p>
                         </Fade>
                     </div>
-                    <div className="py-4 md:py-12">
+                    <div className="py-0">
                         <Fade triggerOnce cascade damping={0.5} direction="up">
                             <h3 className="text-center py-4">The Tech</h3>
                             <p className="text-justify">
@@ -39,7 +40,7 @@ export const Company = () => {
                             </p>
                         </Fade>
                     </div>
-                </div>
+                </Skeleton>
             </section>
         </>
     )

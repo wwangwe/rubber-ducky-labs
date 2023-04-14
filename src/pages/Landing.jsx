@@ -3,7 +3,7 @@ import React from 'react'
 import { Fade } from 'react-awesome-reveal'
 import { Link } from 'react-router-dom'
 
-import { Header } from '../layouts'
+import { Header, Skeleton } from '../layouts'
 import { Solid, SolutionCard, Break } from '../components'
 import { demo1, demo2, gloves, legs, doors, duckOnDock } from '../assets'
 
@@ -23,9 +23,9 @@ export const Landing = () => {
 
             <Break text={"Why Choose Us?"} image={doors} top />
 
-            <div className="container px-4 mx-auto py-2 md:py-20">
+            <Skeleton>
                 <Fade triggerOnce cascade damping={0.5} direction="up">
-                    <h4 className="text-center text-gray-400 pb-12">Check this out</h4>
+                    <h5 className="text-center text-gray-400 tracking-[6px] py-4">Check this out</h5>
                     <p>
                         Picture this - you're using an e-commerce app in the middle of summer and it's recommending ski jackets to you. Umm, what? Nobody told the algorithm that it's not ski season! Now you're wondering if this will drive away users and you have to file a ticket for the data science team to analyze it. But who knows how long that'll take? Frustrating, right?
                     </p>
@@ -36,12 +36,14 @@ export const Landing = () => {
                         <img src={demo1} draggable={false} className="rounded-lg" />
                     </div> */}
                 </Fade>
-            </div>
+            </Skeleton>
 
             <Break text={"Our Approach"} image={gloves} />
 
-            <div className="container px-4 mx-auto py-2 md:py-20">
-                <h4 className="text-center text-gray-400 pb-10">We can help you</h4>
+            <Skeleton>
+                <Fade triggerOnce cascade damping={0.5} direction="up">
+                    <h5 className="text-center text-gray-400 tracking-[6px] py-4">We can help you</h5>
+                </Fade>
                 <div className="grid md:grid-cols-3 grid-cols-1 gap-8">
                     <Fade triggerOnce cascade damping={0.5} direction="up" duration={500}>
                         {
@@ -53,32 +55,32 @@ export const Landing = () => {
                         }
                     </Fade>
                 </div>
-            </div>
+            </Skeleton>
 
             <Break text={"What Makes Us Different?"} image={legs} />
 
-            <div className="container px-4 mx-auto py-2 md:py-20">
-                <h4 className="text-center text-gray-400 pb-10">What Makes Us Different?</h4>
+            <Skeleton>
+                <h5 className="text-center text-gray-400 tracking-[6px] py-4">Here's what you get</h5>
                 <div className="flex flex-wrap justify-between">
-                    <p className='w-full md:w-1/2 pr-0 md:pr-8 text-justify'>
+                    <p className='w-full md:w-1/2 pr-0 text-justify'>
                         With Rubber Ducky Labs, you can easily figure out what's going on with your recommender system. You'll get answers in minutes, rather than waiting a week for the data science team to run some analysis.
                     </p>
-                    <p className='w-full md:w-1/2 pl-0 md:pl-8 text-justify'>
+                    <p className='w-full md:w-1/2 pl-0 text-justify'>
                         Our suite of tools allows you to explore your data visually, analyze individual user journeys, consolidate and debug your business logic, identify trends, segment and filter your data, and compare models and ranking changes side-by-side.
                     </p>
-                    <div className="w-full bg-white p-4 my-8 rounded-3xl border">
+                    <div className="w-full bg-white p-2 my-4 border">
                         <img src={demo2} draggable={false} className="rounded-lg" />
                     </div>
                     <p className='w-full text-justify'>
                         It's all in one place, and you can get started in just 90 minutes. Plus, you get to bring your own model and we take care of keeping your data safe.
                     </p>
                 </div>
-            </div>
+            </Skeleton>
 
             <Break image={duckOnDock} bottom>
                 <div className="relative flex flex-col justify-center items-center space-y-8 md:space-y-10 px-0 md:px-50 text-center">
                     <Fade triggerOnce cascade damping={0.5} direction="up">
-                        <h3 className="text-white uppercase leading-[1.5] text-base md:text-3xl">Maximize your sales with Rubber Ducky's <br /> advanced tools for e-commerce</h3>
+                        <h3 className="text-white uppercase leading-[1.5] text-sm tracking-[5px]">Maximize your sales with Rubber Ducky's <br /> advanced tools for e-commerce</h3>
                         <Solid>
                             <Link to="/contact/">
                                 Get Started <i className="fa-solid fa-arrow-right ml-2"></i>
