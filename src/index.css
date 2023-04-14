@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Typography */
+@font-face {
+  font-family: "Century Gothic";
+  src: url(assets/fonts/CenturyGothic.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Century Gothic Bold";
+  src: url(assets/fonts/CenturyGothicBold.TTF);
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  @apply font-century;
+}
+
+h1 {
+  @apply uppercase font-normal tracking-[8px] md:text-5xl text-3xl my-2;
+}
+
+h2 {
+  @apply uppercase font-normal tracking-[8px] md:text-4xl text-2xl my-2;
+}
+
+h3 {
+  @apply uppercase font-normal tracking-[8px] md:text-3xl text-xl my-2;
+}
+
+h4 {
+  @apply uppercase font-normal tracking-[8px] md:text-2xl text-lg my-2;
+}
+
+h5 {
+  @apply uppercase font-normal tracking-[3px] md:text-xl text-base my-2;
+}
+
+p {
+  @apply font-normal leading-relaxed tracking-widest text-sm pb-1;
+}
+
+span {
+  @apply font-normal leading-relaxed tracking-wide text-base my-1;
+}
+
+small {
+  @apply font-normal leading-relaxed tracking-wide text-sm my-1;
+}
+
+/* Colors */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+input,
+textarea {
+  @apply text-gray-800;
+}
+
+p {
+  @apply pb-4 text-justify;
+}
