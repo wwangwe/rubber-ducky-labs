@@ -44,7 +44,7 @@ export const Landing = () => {
                 <Fade triggerOnce cascade damping={0.5} direction="up">
                     <h5 className="text-center text-gray-400 tracking-[6px] py-4">We can help you</h5>
                 </Fade>
-                <div className="grid md:grid-cols-3 grid-cols-1 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                     <Fade triggerOnce cascade damping={0.5} direction="up" duration={500}>
                         {
                             solutions.map((solution, index) => {
@@ -62,10 +62,10 @@ export const Landing = () => {
             <Skeleton>
                 <h5 className="text-center text-gray-400 tracking-[6px] py-4">Here's what you get</h5>
                 <div className="flex flex-wrap justify-between">
-                    <p className='w-full md:w-1/2 pr-0 text-justify'>
+                    <p className='w-full md:w-1/2 pr-0 sm:pr-4 text-justify'>
                         With Rubber Ducky Labs, you can easily figure out what's going on with your recommender system. You'll get answers in minutes, rather than waiting a week for the data science team to run some analysis.
                     </p>
-                    <p className='w-full md:w-1/2 pl-0 text-justify'>
+                    <p className='w-full md:w-1/2 pl-0 sm:pl-4 text-justify'>
                         Our suite of tools allows you to explore your data visually, analyze individual user journeys, consolidate and debug your business logic, identify trends, segment and filter your data, and compare models and ranking changes side-by-side.
                     </p>
                     <div className="w-full bg-white p-2 my-4 border">
@@ -80,7 +80,7 @@ export const Landing = () => {
             <Break image={duckOnDock} bottom>
                 <div className="relative flex flex-col justify-center items-center space-y-8 md:space-y-10 px-0 md:px-50 text-center">
                     <Fade triggerOnce cascade damping={0.5} direction="up">
-                        <h3 className="text-white uppercase leading-[1.5] text-sm tracking-[5px]">Maximize your sales with Rubber Ducky's <br /> advanced tools for e-commerce</h3>
+                        <h3 className="text-white uppercase leading-[1.5] text-sm sm:text-2xl tracking-[5px]">Maximize your sales with Rubber Ducky's <br /> advanced tools for e-commerce</h3>
                         <Solid>
                             <Link to="/contact/">
                                 Get Started <i className="fa-solid fa-arrow-right ml-2"></i>

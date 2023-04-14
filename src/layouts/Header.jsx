@@ -18,7 +18,7 @@ export const Header = () => {
             <div className="absolute inset-0 bg-gradient-to-b from-black via-secondary to-accent opacity-20"></div>
             <div className="relative flex flex-col justify-center items-center space-y-8 px-0 text-center">
                 <Fade cascade triggerOnce damping={0.5} direction="up">
-                    <h2 className="text-white uppercase leading-[1.5] text-sm tracking-[5px]">Discover the Potential <br className="" /> of Your Recommendations</h2>
+                    <h2 className="text-white uppercase leading-[1.5] text-sm sm:text-2xl tracking-[5px]">Discover the Potential <br className="" /> of Your Recommendations</h2>
                     <div className="flex justify-between space-x-4">
                         <Solid>
                             <Link to="/contact/">

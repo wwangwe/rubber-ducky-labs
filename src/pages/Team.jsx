@@ -16,10 +16,10 @@ export const Team = () => {
             <div className="flex flex-wrap border-0 border-gray-300 p-4">
               <Fade triggerOnce cascade damping={0.5} direction="up">
                 <div className="w-full flex flex-wrap justify-center items-center border-b border-dashed border-gray-300">
-                  <div className="w-full md:w-3/12 flex justify-center">
-                    <img src={alexandria} alt="Alexandria" className="w-40 " />
+                  <div className="w-full sm:w-3/12 flex justify-center">
+                    <img src={alexandria} alt="Alexandria" className="w-full " />
                   </div>
-                  <div className="w-full md:w-9/12">
+                  <div className="w-full sm:w-9/12">
                     <div className="flex flex-wrap text-center">
                       <h4 className="w-full">Alexandra Johnson</h4>
                       <div className="w-full">
@@ -42,10 +42,10 @@ export const Team = () => {
             <div className="flex flex-wrap border-0 border-gray-300 p-4">
               <Fade triggerOnce cascade damping={0.5} direction="up">
                 <div className="w-full flex flex-wrap justify-center items-center border-b border-dashed border-gray-300">
-                  <div className="w-full md:w-3/12 flex justify-center">
-                    <img src={georgia} alt="Georgia" className="w-40" />
+                  <div className="w-full sm:w-3/12 flex justify-center">
+                    <img src={georgia} alt="Georgia" className="w-full" />
                   </div>
-                  <div className="w-full md:w-9/12">
+                  <div className="w-full sm:w-9/12">
                     <div className="flex flex-wrap text-center">
                       <h4 className="w-full">Georgia Hong</h4>
                       <div className="w-full">
