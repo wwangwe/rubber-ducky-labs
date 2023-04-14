@@ -44,7 +44,7 @@ export const Landing = () => {
                 <Fade triggerOnce cascade damping={0.5} direction="up">
                     <h5 className="text-center text-gray-400 tracking-[6px] py-4">We can help you</h5>
                 </Fade>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     <Fade triggerOnce cascade damping={0.5} direction="up" duration={500}>
                         {
                             solutions.map((solution, index) => {
@@ -80,7 +80,7 @@ export const Landing = () => {
             <Break image={duckOnDock} bottom>
                 <div className="relative flex flex-col justify-center items-center space-y-8 md:space-y-10 px-0 md:px-50 text-center">
                     <Fade triggerOnce cascade damping={0.5} direction="up">
-                        <h3 className="text-white uppercase leading-[1.5] text-sm sm:text-2xl tracking-[5px]">Maximize your sales with Rubber Ducky's <br /> advanced tools for e-commerce</h3>
+                        <h3 className="text-white uppercase leading-[1.5] text-sm sm:text-2xl lg:text-4xl tracking-[5px] lg:tracking-[8px]">Maximize your sales with Rubber Ducky's <br /> advanced tools for e-commerce</h3>
                         <Solid>
                             <Link to="/contact/">
                                 Get Started <i className="fa-solid fa-arrow-right ml-2"></i>

@@ -8,7 +8,7 @@ export const Footer = () => {
             <div className="grid md:grid-cols-3 grid-cols-1 gap-4 px-2 py-4 md:p-6">
                 <div className="md:text-left text-center">
                     <Zoom cascade triggerOnce delay={500} duration={500}>
-                        <small className='tracking-[4px] text-[11px]'>
+                        <small className='tracking-[3px] text-[11px]'>
                             Built in San Francisco, CA
                         </small>
                     </Zoom>
@@ -31,7 +31,7 @@ export const Footer = () => {
                 </div>
                 <div className="md:text-right text-center">
                     <Zoom cascade triggerOnce delay={500} duration={500}>
-                        <small className='tracking-[4px] text-[11px]'>
+                        <small className='tracking-[3px] text-[11px]'>
                             Copyright &copy; 2023 - Rubber Ducky Labs, Inc
                         </small>
                     </Zoom>

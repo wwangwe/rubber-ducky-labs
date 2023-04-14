@@ -10,10 +10,10 @@ export const Team = () => {
   return (
     <>
       <Header title="Meet the 'A' Team" image={hands} />
-      <section className="py-2">
+      <section className="py-2 sm:py-6 lg:py-10">
         <Skeleton>
-          <div className="grid grid-cols-1 gap-6">
-            <div className="flex flex-wrap border-0 border-gray-300 p-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10">
+            <div className="flex flex-wrap border-0 lg:border border-gray-300 p-4">
               <Fade triggerOnce cascade damping={0.5} direction="up">
                 <div className="w-full flex flex-wrap justify-center items-center border-b border-dashed border-gray-300">
                   <div className="w-full sm:w-3/12 flex justify-center">
@@ -39,7 +39,7 @@ export const Team = () => {
               </Fade>
             </div>
 
-            <div className="flex flex-wrap border-0 border-gray-300 p-4">
+            <div className="flex flex-wrap border-0 lg:border border-gray-300 p-4">
               <Fade triggerOnce cascade damping={0.5} direction="up">
                 <div className="w-full flex flex-wrap justify-center items-center border-b border-dashed border-gray-300">
                   <div className="w-full sm:w-3/12 flex justify-center">

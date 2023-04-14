@@ -10,13 +10,13 @@ export const Company = () => {
     return (
         <>
             <Header title="Who We Are" image={duck}>
-                <h5 className="text-white hidden sm:block sm:text-sm">
+                <h5 className="text-white hidden sm:block sm:text-sm lg:text-base">
                     Welcome to Rubber Ducky Labs - the ultimate solution to avoid tone-deaf product recommendations in the e-commerce industry.
                 </h5>
             </Header>
             <section className="py-2">
                 <Skeleton>
-                    <div className="py-0 sm:py-2">
+                    <div className="py-0 sm:py-2 lg:py-6">
                         <Fade triggerOnce cascade damping={0.5} direction="up">
                             <h3 className="text-center py-4">Our Story</h3>
                             <p className="text-justify">
@@ -24,7 +24,7 @@ export const Company = () => {
                             </p>
                         </Fade>
                     </div>
-                    <div className="py-0 sm:py-2">
+                    <div className="py-0 sm:py-2 lg:py-6">
                         <Fade triggerOnce cascade damping={0.5} direction="up">
                             <h3 className="text-center py-4">The Vision</h3>
                             <p className="text-justify">
@@ -32,7 +32,7 @@ export const Company = () => {
                             </p>
                         </Fade>
                     </div>
-                    <div className="py-0 sm:py-2">
+                    <div className="py-0 sm:py-2 lg:py-6">
                         <Fade triggerOnce cascade damping={0.5} direction="up">
                             <h3 className="text-center py-4">The Tech</h3>
                             <p className="text-justify">

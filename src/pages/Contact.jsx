@@ -13,7 +13,7 @@ export const Contact = () => {
             <section className="py-2 pb-6">
                 <Skeleton>
                     <div className="flex flex-wrap justify-between">
-                        <div className="w-full sm:w-full">
+                        <div className="w-full sm:w-full lg:w-1/2">
                             <Fade triggerOnce cascade damping={0.5} direction="up">
                                 <h3 className="py-4 text-center sm:text-left">We Are Social</h3>
                             </Fade>
@@ -38,7 +38,7 @@ export const Contact = () => {
                                 </Fade>
                             </div>
                         </div>
-                        <div className="w-full sm:w-full">
+                        <div className="w-full sm:w-full lg:w-1/2">
                             <Fade triggerOnce cascade damping={0.5} direction="up">
                                 <h3 className="py-4 text-center sm:text-left">Quack Us Up! </h3>
                             </Fade>
@@ -68,7 +68,7 @@ export const Contact = () => {
                                         <input type="email" name="message" id="message" className="block py-2.5 w-full text-sm uppercase bg-transparent border-b border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-accent peer" placeholder=" " required />
                                         <label htmlFor="message" rows="4" className="block peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-accent peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Message</label>
                                     </div>
-                                    <div className="text-center">
+                                    <div className="text-right">
                                         <Solid alt={true}>
                                             Submit
                                         </Solid>
